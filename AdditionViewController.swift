@@ -22,8 +22,10 @@ class AdditionViewController: UIViewController {
     
     //to display substraction output
     @IBOutlet weak var substractionlabel: UILabel!
+   
     
-    
+    //To display multiplication output
+    @IBOutlet weak var MultiplicationLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,14 +83,38 @@ class AdditionViewController: UIViewController {
                 
 
                 substractionlabel.text! = "Anwer is \(outputValue1)"
-                
-                
-                
+                               
+        
+    }
+    
+ 
+}
+        
+        //Multiplication code when multiplication Button is tapped
+            @IBAction func MultiplicationTapped(_ sender: Any) {
+        
+        
+        
+        let firstValue2 = Double(Textlfield1!.text!)
+                           
+                    let secoundValue2 = Double(textField2.text!)
+                   
+                   if firstValue2 != nil && secoundValue2 != nil{
+                       
+                       let outputValue2 = Double(firstValue2! * secoundValue2!)
+                       
+
+                       MultiplicationLabel.text! = "Anwer is \(outputValue2)"
+        
+        
+        
         
     }
     
     
-    
-    
-
 }
+        
+        
+        
+        
+    }
