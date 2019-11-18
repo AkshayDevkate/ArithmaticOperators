@@ -27,6 +27,11 @@ class AdditionViewController: UIViewController {
     //To display multiplication output
     @IBOutlet weak var MultiplicationLabel: UILabel!
     
+    
+    
+    //To display Division output
+    @IBOutlet weak var DivisionLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -113,7 +118,29 @@ class AdditionViewController: UIViewController {
     
     
 }
+             //Division code when Division Button is tapped
+            @IBAction func DivisionTapped(_ sender: Any) {
         
+        
+        
+        let firstValue3 = Double(Textlfield1!.text!)
+                           
+                    let secoundValue3 = Double(textField2.text!)
+                   
+                   if firstValue3 != nil && secoundValue3 != nil{
+                       
+                       let outputValue3 = Double(firstValue2! * secoundValue2!)
+                       
+
+                       DivisionLabel.text! = "Anwer is \(outputValue3)"
+        
+        
+        
+        
+    }
+    
+    
+}
         
         
         
