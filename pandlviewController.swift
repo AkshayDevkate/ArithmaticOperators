@@ -31,9 +31,9 @@ class mathopViewController: UIViewController {
         
         if investment != nil && returns != nil{
             
-            let outputvalue = Double((((investment! - returns!)/investment!))*100)
+            let outputvalue = Double((((investment! - returns!)/investment!))*100)     //profit and loss percentage calculator 
             
-            UILabelAns.text! = "Ans is \(outputvalue)"
+            UILabelAns.text! = "profit/Loss = \(outputvalue) %"
             
         
             
